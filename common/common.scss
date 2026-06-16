@@ -20,12 +20,11 @@
     max-width: 340px;
     text-align: left;
     margin-bottom: 0;
-    .heading {
-      font-size: $font-up-3;
-      font-weight: 700;
-      margin-bottom: 0.5em;
+    .footer-logo {
+      height: 64px;
+      width: auto;
+      margin-bottom: 0.75em;
       display: block;
-      color: var(--secondary);
     }
     .blurb {
       color: var(--secondary-medium);
