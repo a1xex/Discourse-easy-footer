@@ -3,8 +3,10 @@ import PluginOutlet from "discourse/components/plugin-outlet";
 import concatClass from "discourse/helpers/concat-class";
 import icon from "discourse/helpers/d-icon";
 import dasherize from "discourse/helpers/dasherize";
+
 export default class extends Component {
   blurb = settings.blurb;
+
   <template>
     {{#if @showFooter}}
       <div class="wrap">
