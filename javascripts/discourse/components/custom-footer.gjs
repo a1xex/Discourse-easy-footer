@@ -11,7 +11,10 @@ export default class extends Component {
         <div class="flexbox">
           <div class="first-box">
             <img src="https://forum.wdcrp.net/uploads/default/optimized/1X/5a3186fc1ebca607260d09722e04300c45b7a0ef_2_500x500.png" alt="Site Logo" class="footer-logo" />
-            <div class="blurb">{{this.blurb}}</div>
+            <div class="first-box-text">
+              <div class="heading">Washington D.C. Roleplay</div>
+              <div class="blurb">{{this.blurb}}</div>
+            </div>
           </div>
           <div class="second-box">
             <PluginOutlet @name="easy-footer-second-box">
