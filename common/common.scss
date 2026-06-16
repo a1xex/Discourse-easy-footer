@@ -38,6 +38,7 @@
     }
   }
 
+  // Hide footer sections since you're only using Discord
   .second-box {
     display: none;
   }
@@ -49,7 +50,8 @@
     align-items: center;
     text-align: center;
     border-top: 1px solid rgb(var(--primary-low-rgb), 0.05);
-    padding-top: 0.75em;
+    padding-top: 1em;
+    gap: 1rem;
   }
 
   .footer-links {
@@ -57,63 +59,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
     flex-wrap: wrap;
   }
 
   .small-link {
     color: var(--secondary-high);
-    margin: 0 0.5em;
     font-size: $font-down-2;
+    margin: 0;
   }
 
   .social {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
     .social-link {
-      margin: 20px 10px;
+      margin: 0;
       display: flex;
       align-items: center;
       justify-content: center;
 
       .d-icon {
         color: var(--secondary);
-        min-width: unset;
-        margin: 0;
         font-size: $font-up-2;
         opacity: 1;
+        margin: 0;
+        min-width: unset;
       }
     }
   }
 
-  .list span {
-    font-weight: bold;
-  }
-
-  .footer-section-link-wrapper a {
-    color: var(--secondary-high);
-  }
-
-  .list {
-    margin: 1em;
-    margin-top: 0;
-  }
-
   .d-icon {
-    margin-right: 5px;
-    opacity: 0.7;
-    min-width: 16px;
-    text-align: center;
+    margin-right: 0;
 
     &.fa-none {
       min-width: unset;
-    }
-
-    .rtl & {
-      margin-right: 0;
-      margin-left: 5px;
     }
   }
 }
@@ -129,35 +110,16 @@
       border-bottom: 1px solid rgb(var(--primary-low-rgb), 0.05);
       margin-bottom: 1em;
       padding-bottom: 1em;
-
-      .blurb {
-        display: block;
-      }
     }
 
     .third-box {
-      margin-top: 0.5em;
-      flex-direction: column;
-      gap: 0.5em;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     .first-box,
-    .second-box,
     .third-box {
       flex: 1 1 100%;
-    }
-  }
-}
-
-@media screen and (width <= 700px) {
-  .custom-footer {
-    .first-box {
-      width: 100%;
-    }
-
-    .footer-links {
-      flex-direction: column;
-      gap: 0.5em;
     }
   }
 }
