@@ -3,19 +3,14 @@ import PluginOutlet from "discourse/components/plugin-outlet";
 import concatClass from "discourse/helpers/concat-class";
 import icon from "discourse/helpers/d-icon";
 import dasherize from "discourse/helpers/dasherize";
-
 export default class extends Component {
-  mainHeading = settings.heading;
   blurb = settings.blurb;
-
   <template>
     {{#if @showFooter}}
       <div class="wrap">
         <div class="flexbox">
           <div class="first-box">
-            <div class="heading">
-              {{this.mainHeading}}
-            </div>
+            <img src="https://cdn.discordapp.com/attachments/1416966789845221497/1516481772181782668/ChatGPT_Image_Jun_16_2026_01_11_12_AM.png?ex=6a32cd35&is=6a317bb5&hm=b49c0d7d94cb3a5288e428613892b165d074f2fd598f1e6f87b83231435767fd&" alt="Site Logo" class="footer-logo">
             <div class="blurb">
               {{this.blurb}}
             </div>
@@ -31,14 +26,13 @@ export default class extends Component {
                     <span title={{section.title}}>
                       {{section.text}}
                     </span>
-
                     <ul>
                       {{#each section.links as |link|}}
                         <li
                           class="footer-section-link-wrapper"
                           data-easyfooter-link={{dasherize link.text}}
                         >
-                          <a
+                          
                             class="footer-section-link"
                             title={{link.title}}
                             href={{link.url}}
@@ -55,11 +49,10 @@ export default class extends Component {
               </div>
             </PluginOutlet>
           </div>
-
           <div class="third-box">
             <div class="footer-links">
               {{#each settings.small_links as |link|}}
-                <a
+                
                   class={{concatClass "small-link" link.css_class}}
                   data-easyfooter-small-link={{dasherize link.text}}
                   target={{link.target}}
@@ -69,10 +62,9 @@ export default class extends Component {
                 </a>
               {{/each}}
             </div>
-
             <div class="social">
               {{#each settings.social_links as |link|}}
-                <a
+                
                   class="social-link"
                   data-easyfooter-social-link={{dasherize link.text}}
                   title={{link.title}}
