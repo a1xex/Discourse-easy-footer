@@ -1,11 +1,9 @@
 heading:
   default: "This is a header"
-  max: 25
-
+  max: 200
 blurb:
   default: "Ius vitae ornatus at, ei mea sumo quot dicant. Ei tale democritum eos, in mea timeam accumsan forensibus. Ei his aperiam suavitate. Et debitis convenire sea, viris dictas latine."
-  max: 180
-
+  max: 1000
 sections:
   type: objects
   default: []
@@ -64,7 +62,6 @@ sections:
                 - origin
                 - origin-when-cross-origin
                 - unsafe-url
-
 small_links:
   type: objects
   default:
@@ -107,7 +104,6 @@ small_links:
         validations:
           min: 1
           max: 50
-
 social_links:
   type: objects
   default:
@@ -161,10 +157,8 @@ social_links:
         validations:
           min_length: 1
           max_length: 200
-
 show_footer_on_login_required_page:
   default: true
-
 svg_icons:
   default: "fab-facebook|fab-twitter|fab-youtube"
   type: "list"
