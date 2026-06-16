@@ -10,25 +10,36 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     color: var(--secondary);
     padding: 3em 4em 2em 4em;
     gap: 2rem;
   }
   .first-box {
-    flex: 1 1 280px;
-    max-width: 500px;
-    text-align: left;
-    margin-bottom: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 1.25rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
     .footer-logo {
       height: 72px;
       width: auto;
       flex-shrink: 0;
+    }
+    .first-box-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .heading {
+      font-size: $font-up-2;
+      font-weight: 700;
+      color: var(--secondary);
+      margin: 0;
     }
     .blurb {
       color: var(--secondary-medium);
@@ -106,16 +117,11 @@
   .custom-footer {
     .flexbox {
       padding: 2em 1.5em 1em 1.5em;
-      flex-direction: column;
-      align-items: flex-start;
     }
     .first-box {
-      max-width: 100%;
-      border-bottom: 1px solid rgb(var(--primary-low-rgb), 0.05);
-      padding-bottom: 1.5em;
-      margin-bottom: 0.5em;
       flex-direction: row;
       align-items: center;
+      max-width: 100%;
     }
     .third-box {
       flex-direction: column;
