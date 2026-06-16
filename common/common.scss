@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    color: var(--secondary);
+    color: var(--primary);
     padding: 3em 4em 2em 4em;
     gap: 2rem;
   }
@@ -38,11 +38,11 @@
     .heading {
       font-size: $font-up-2;
       font-weight: 700;
-      color: var(--secondary);
+      color: var(--primary);
       margin: 0;
     }
     .blurb {
-      color: var(--secondary-medium);
+      color: var(--primary-medium);
       text-align: left;
       font-size: $font-down-1;
       line-height: 1.6;
@@ -58,7 +58,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid rgb(var(--primary-low-rgb), 0.08);
+    border-top: 1px solid var(--primary-low);
     padding: 1.25em 4em;
     margin-top: 1em;
     gap: 1.5rem;
@@ -72,12 +72,12 @@
     flex-wrap: wrap;
   }
   .small-link {
-    color: var(--secondary-medium);
+    color: var(--primary);
     font-size: $font-down-2;
     margin: 0;
     transition: color 0.2s ease;
     &:hover {
-      color: var(--secondary);
+      color: var(--primary-high);
     }
   }
   .social {
@@ -96,7 +96,7 @@
         opacity: 1;
       }
       .d-icon {
-        color: var(--secondary);
+        color: var(--primary);
         font-size: $font-up-2;
         margin: 0;
         min-width: unset;
