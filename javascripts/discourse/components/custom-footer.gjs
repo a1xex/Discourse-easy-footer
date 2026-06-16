@@ -12,7 +12,7 @@ export default class extends Component {
           <div class="first-box">
             <img src="https://forum.wdcrp.net/uploads/default/optimized/1X/5a3186fc1ebca607260d09722e04300c45b7a0ef_2_500x500.png" alt="Site Logo" class="footer-logo" />
             <div class="first-box-text">
-              <div class="heading">Washington D.C. Roleplay</div>
+              <div class="heading">Washington D.C. Roleplay Community Forums</div>
               <div class="blurb">{{this.blurb}}</div>
             </div>
           </div>
