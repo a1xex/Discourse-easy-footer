@@ -72,14 +72,14 @@
     flex-wrap: wrap;
   }
   .small-link {
+  color: var(--primary-medium);
+  font-size: $font-down-2;
+  margin: 0;
+  transition: color 0.2s ease;
+  &:hover {
     color: var(--primary);
-    font-size: $font-down-2;
-    margin: 0;
-    transition: color 0.2s ease;
-    &:hover {
-      color: var(--primary-high);
-    }
   }
+}
   .social {
     display: flex;
     align-items: center;
